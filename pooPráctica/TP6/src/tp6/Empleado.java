@@ -1,7 +1,6 @@
 package tp6;
 import java.time.*;
 
-
 public class Empleado
 {
    private String nombre;
@@ -41,4 +40,9 @@ public class Empleado
       salario += raise;
    }   
 }
-
+/*
+ *Alumno: Penela Priscila
+ *Comisión: TT
+ *Fecha: 6/5/2023
+ *
+ */

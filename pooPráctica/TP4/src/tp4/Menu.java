@@ -24,31 +24,31 @@ public class Menu {
 		
 		switch (operacion){
 		case 1: 
-			Suma();
+			suma();
 			System.out.println("Presione Enter para continuar...");
 			new java.util.Scanner(System.in).nextLine();
 			
 		break;
 		case 2:
-			Resta();
+			resta();
 			System.out.println("Presione Enter para continuar...");
 			new java.util.Scanner(System.in).nextLine();
 			
 		break;
 		case 3: 
-			Multiplicacion();
+			multiplicacion();
 			System.out.println("Presione Enter para continuar...");
 			new java.util.Scanner(System.in).nextLine();
 			
 		break;
 		case 4: 
-			Division();
+			division();
 			System.out.println("Presione Enter para continuar...");
 			new java.util.Scanner(System.in).nextLine();
 			
 		break;
 		case 5: 
-			Salir();
+			salir();
 			System.out.println("Presione Enter para continuar...");
 			new java.util.Scanner(System.in).nextLine();
 			
@@ -64,7 +64,7 @@ public class Menu {
 	
 	}	
 	
-	public void Suma() {
+	public void suma() {
 		Scanner suma = new Scanner(System.in);
 		
 		System.out.println("Ingrese un numero entero: ");
@@ -75,7 +75,7 @@ public class Menu {
 		System.out.println("La suma de "+n1+" y "+n2+" es: "+respuesta);
 	}
 	
-	public void Resta() {
+	public void resta() {
         Scanner resta = new Scanner(System.in);
 		
 		System.out.println("Ingrese un numero entero: ");
@@ -86,7 +86,7 @@ public class Menu {
 		System.out.println("La resta de "+n1+" y "+n2+" es: "+respuesta);
 	}
 	
-	public void Multiplicacion() {
+	public void multiplicacion() {
         Scanner multi = new Scanner(System.in);
 		
 		System.out.println("Ingrese un numero entero: ");
@@ -97,7 +97,7 @@ public class Menu {
 		System.out.println("La multiplicación de "+n1+" y "+n2+" es: "+respuesta);
 	}
 	
-	public void Division() {
+	public void division() {
         Scanner divi = new Scanner(System.in);
 		
 		System.out.println("Ingrese un numero entero: ");
@@ -108,7 +108,7 @@ public class Menu {
 		System.out.println("La división de "+n1+" y "+n2+" es: "+respuesta);
 	}
 	
-	public void Salir() {
+	public void salir() {
 		System.out.println("Menu cerrado");
 	}
 
@@ -119,3 +119,9 @@ public class Menu {
 	
 }
 }
+/*
+ *Alumno: Penela Priscila
+ *Comisión: TT
+ *Fecha: 6/5/2023
+ *
+ */
