@@ -1,4 +1,4 @@
-package TPS1;
+package tps1;
 
 public class Articulo implements Entregable {
 	private String titulo;

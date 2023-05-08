@@ -1,4 +1,4 @@
-package TPS1;
+package tps1;
 
 public interface Entregable {
 
