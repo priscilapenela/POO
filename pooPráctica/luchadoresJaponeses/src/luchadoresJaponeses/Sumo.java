@@ -35,17 +35,14 @@ public class Sumo implements Comparable<Sumo> {
 		int pesoComparison = Integer.compare(this.peso, o.peso);
 		int alturaComparison = Integer.compare(this.altura, o.altura);
 
-		System.out.println(pesoComparison + " " + alturaComparison);
-		
-		
-		if (pesoComparison == 0 && alturaComparison == 0) {
-			return 0;
+		if (pesoComparison > 0 && alturaComparison > 0) {
+			return 1;
 		} else if (pesoComparison == 0 && alturaComparison > 0) {
 			return 1;
 		} else if (pesoComparison > 0 && alturaComparison == 0) {
-			return -1;
+			return 1;
 		} else {
-			return (Integer) null;
+			return 0;
 		}
 	}
 

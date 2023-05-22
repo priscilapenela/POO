@@ -19,20 +19,21 @@ public class Torneo {
 		copiaP.addAll(participantes);
 		int cont = 0;
 		for (Sumo s1 : participantes) {
-			for (Sumo s2: copiaP) {
-				System.out.println(s2);
-				if (s1.compareTo(s2) == -1 || s1.compareTo(s2) == 0 || s1.compareTo(s2) == 1) {
+			for (Sumo s2 : copiaP) {
+				if (s1.compareTo(s2) == 1) {
 					cont++;
 				}
 			}
 			cantDominantes.add(cont);
+			cont = 0;
 		}
-
-		//System.out.println(cantDominantes);
 	}
 
 	public void mostrarParticipantes() {
-
+		System.out.println(participantes.size());
+		for (Sumo s : participantes) {
+			System.out.println(s);
+		}
 	}
 
 }
