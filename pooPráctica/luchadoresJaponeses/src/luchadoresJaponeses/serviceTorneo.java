@@ -1,13 +1,13 @@
 package luchadoresJaponeses;
 
-import java.io.IOException;
-
 public class serviceTorneo {
 
-	public static void main(String[] args) throws IOException{
-		
+	public static void main(String[] args) throws Exception {
+
 		Archivo archivo = new Archivo();
-		archivo.Lectura();
+
+		archivo.lecturaEscritura();
+
 	}
 
 }

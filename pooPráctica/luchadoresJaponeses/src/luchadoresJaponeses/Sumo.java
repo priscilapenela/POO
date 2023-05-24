@@ -4,9 +4,14 @@ public class Sumo implements Comparable<Sumo> {
 	private int altura;
 	private int peso;
 
-	public Sumo(int alt2, int p2) {
-		this.altura = alt2;
-		this.peso = p2;
+	public Sumo(int p2, int alt2) throws Exception {
+		if (0 <= p2 && p2 <= 100000000 && 0 <= alt2 && alt2 <= 100000000) {
+			this.altura = alt2;
+			this.peso = p2;
+		} else {
+			throw new Exception("La altura o peso ingresado se encuentran fuera de los parámetros");
+		}
+
 	}
 
 	public int getAltura() {
@@ -27,7 +32,7 @@ public class Sumo implements Comparable<Sumo> {
 
 	@Override
 	public String toString() {
-		return "Sumo [altura=" + getAltura() + ", peso=" + getPeso() + "]";
+		return "Sumo [peso =" + getPeso() + ", altura =" + getAltura() + "]";
 	}
 
 	@Override

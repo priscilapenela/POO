@@ -1,19 +1,24 @@
 package luchadoresJaponeses;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Torneo {
-	private LinkedList<Sumo> participantes;
+	private ArrayList<Sumo> participantes;
 
-	public Torneo() {
-		participantes = new LinkedList<Sumo>();
+	public Torneo(int cantSumos) throws Exception {
+		if (1 <= cantSumos && cantSumos <= 100000) {
+			participantes = new ArrayList<Sumo>(cantSumos - 1);
+		} else {
+			throw new Exception("La cantidad de participantes es mayor o menor de la permitida" + cantSumos);
+		}
 	}
 
 	public void addParticipantes(Sumo sumito) {
 		participantes.add(sumito);
 	}
 
-	public void isDominante() {
+	public LinkedList<Integer> isDominante() {
 		LinkedList<Sumo> copiaP = new LinkedList<Sumo>();
 		LinkedList<Integer> cantDominantes = new LinkedList<Integer>();
 		copiaP.addAll(participantes);
@@ -27,6 +32,8 @@ public class Torneo {
 			cantDominantes.add(cont);
 			cont = 0;
 		}
+
+		return cantDominantes;
 	}
 
 	public void mostrarParticipantes() {
